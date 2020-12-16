@@ -13,8 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/Content/styles.css" rel="stylesheet" />
-    <!-- Food Cat List Styling-->
+    <!-- Vendor CSS Files -->
+    <link href="~/Scripts/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/Scripts/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/Scripts/vendor/venobox/venobox.css" rel="stylesheet">
+
+  
+    <!--Styling-->
     <link rel="stylesheet" href="~/Content/main.css" />
+    <link rel="stylesheet" href="~/Content/templatemo-style.css" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -27,16 +34,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mainback">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">FoodCategories</a></li>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Services</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#book-table">Order</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <header id="mainback" class="masthead">
         <div class="container">
             <div class="masthead-subheading">Welcome To Canteen Food Management and Ordering System!</div>
             <div class="masthead-heading text-uppercase">C<span style="color: #fed136">F</span>M<span style="color: #fed136">O</span>S </div>
@@ -44,6 +55,75 @@
         </div>
     </header>
 
+    <section class="cook-delecious">
+        <div class="containeer">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="first-image">
+                        <img src="~/Assets/Images/cook_01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cook-content">
+                        <h4>We cook delecious</h4>
+                        <div class="contact-content">
+                            <span>You can call us on:</span>
+                            <h6>+925643217</h6>
+                        </div>
+                        <span>or</span>
+                        <div class="primary-white-button">
+                            <a href="#book-table" class="scroll-link" data-id="book-table">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="second-image">
+                        <img src="~/Assets/Images/cook_02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Why Us____</h2>
+                <p>Why Choose Our Canteen</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="box">
+                        <span>01</span>
+                        <h4>Dedicated Team</h4>
+                        <p>We are the team of dedicated professionals, in pursuit to do whatever it takes to make your days unforgettable.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box">
+                        <span>02</span>
+                        <h4>Order Accuracy</h4>
+                        <p>We provide Greet customers services and approach them in a way that is natural and fits the individual situation</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box">
+                        <span>03</span>
+                        <h4> Respect the customer needs.</h4>
+                        <p>We make Customer Happy by ensuring great service.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
@@ -140,6 +220,45 @@
         </div>
     </section>
 
+    <!-- Services -->
+    <section class="services" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="">
+                            <img src="~/Assets/Images/cook_breakfast.png" alt="Breakfast">
+                            <h4>Breakfast</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="">
+                            <img src="~/Assets/Images/cook_lunch.png" alt="Lunch">
+                            <h4>Lunch</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="">
+                            <img src="~/Assets/Images/cook_dinner.png" alt="Dinner">
+                            <h4>Dinner</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="">
+                            <img src="~/Assets/Images/cook_dessert.png" alt="Desserts">
+                            <h4>Desserts</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Team-->
     <section class="page-section bg-light" id="team">
         <div class="container">
@@ -153,9 +272,11 @@
                         <img class="mx-auto rounded-circle" src="~/Assets/Images/team/Eisha.jpg" alt="" />
                         <h4>Eisha Nawaz</h4>
                         <p class="text-muted">Computer Scientist</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/EishaButt"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -163,6 +284,7 @@
                         <img class="mx-auto rounded-circle" src="~/Assets/Images/team/Khansa.jpg" alt="" />
                         <h4>Khansa Khaliq</h4>
                         <p class="text-muted">Computer Scientist</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/Khansa-Khaliq"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -173,6 +295,7 @@
                         <img class="mx-auto rounded-circle" src="~/Assets/Images/team/muskan.png" alt="" />
                         <h4>Muskan Asif</h4>
                         <p class="text-muted">Computer Scientist</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/muskanrafi44"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -189,6 +312,231 @@
             </div>
         </div>
     </section>
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Some photos of Dishes From Our Canteen</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row no-gutters">
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/junkFood/donuts.png" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/junkFood/donuts.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Punjabi/paneer-tikka.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Punjabi/paneer-tikka.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Chinese/Manchurian-Recipe-blog-1-of-1.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Chinese/Manchurian-Recipe-blog-1-of-1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/junkFood/Chicken-Shawarma-Final-1.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Shawarma-Final-1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Beverages/carrot-juice-1296x728-header.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Beverages/carrot-juice-1296x728-header.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Beverages/apple.jpeg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Beverages/apple.jpeg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Soups/beercheesesoup.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Soups/beercheesesoup.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Soups/main.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Soups/main.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Chinese/chilli-chicken-recipe-500x500.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Chinese/chilli-chicken-recipe-500x500.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Beverages/orange.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Beverages/orange.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Punjabi/saag and makki ki roti.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Punjabi/saag and makki ki roti.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Punjabi/Kadhai.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Punjabi/Kadhai.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Punjabi/Aloo-Paratha-620.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Punjabi/Aloo-Paratha-620.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="~/Assets/Images/FoodItems/Punjabi/Murgh-cholay.jpg" class="venobox" data-gall="gallery-item">
+                            <img src="~/Assets/Images/FoodItems/Punjabi/Murgh-cholay.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End Gallery Section -->
+
+    <!--Book Your Order Now-->
+    <section id="book-table">
+        <div class="containeerr">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="heading">
+                        <h2>Book Your Order Now</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-12">
+                    <div class="left-image">
+                        <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Tikka-Wrap-.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="right-info">
+                        <h4>Reservation</h4>
+                        <form id="form-submit" action="" method="get">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='day' onchange='this.form.()'>
+                                            <option value="">Select day</option>
+                                            <option value="Monday">Monday</option>
+                                            <option value="Tuesday">Tuesday</option>
+                                            <option value="Wednesday">Wednesday</option>
+                                            <option value="Thursday">Thursday</option>
+                                            <option value="Friday">Friday</option>
+                                            <option value="Saturday">Saturday</option>
+                                            <option value="Sunday">Sunday</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='hour' onchange='this.form.()'>
+                                            <option value="">Select hour</option>
+                                            <option value="10-00">10:00</option>
+                                            <option value="12-00">12:00</option>
+                                            <option value="14-00">14:00</option>
+                                            <option value="16-00">16:00</option>
+                                            <option value="18-00">18:00</option>
+                                            <option value="20-00">20:00</option>
+                                            <option value="22-00">22:00</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="phone" type="phone" class="form-control" id="phone" placeholder="Phone number" required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required class="person" name='persons' onchange='this.form.()'>
+                                            <option value="">How many persons?</option>
+                                            <option value="1-Person">1 Person</option>
+                                            <option value="2-Persons">2 Persons</option>
+                                            <option value="3-Persons">3 Persons</option>
+                                            <option value="4-Persons">4 Persons</option>
+                                            <option value="5-Persons">5 Persons</option>
+                                            <option value="6-Persons">6 Persons</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Book Order</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--End Book Your Order Now-->
 
     <!-- Contact-->
     <section class="page-section" id="contact">
@@ -197,8 +545,11 @@
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
                 <h3 class="section-subheading text-muted">Contact Us If you have any Query.</h3>
             </div>
+
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
+
                 <div class="row align-items-stretch mb-5">
+
                     <div class="col-md-6">
                         <div class="form-group">
                             <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
@@ -224,6 +575,36 @@
                     <div id="success"></div>
                     <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                 </div>
+
+
+                <div class="row align-items-stretch mb-5">
+                    <div class="address">
+                        <i class="icofont-google-map"></i>
+                        <h4>Location:</h4>
+                        <p>CAFMOS ROAD</p>
+                    </div>
+
+                    <div class="open-hours">
+                        <i class="icofont-clock-time"></i>
+                        <h4>Open Hours:</h4>
+                        <p>
+                            Monday-Saturday:<br>
+                            11:00 AM - 2300 PM
+                        </p>
+                    </div>
+
+                    <div class="email">
+                        <i class="icofont-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>info@example.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="icofont-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+923837474</p>
+                    </div>
+                </div>
             </form>
         </div>
     </section>
@@ -244,6 +625,8 @@
             </div>
         </div>
     </footer>
+
+
     <!-- Food Categories-->
     <!-- Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -262,87 +645,87 @@
                                 <ul class="list-inline">
                                     <li>Category: Junk Food</li>
                                 </ul>
-                                    <!-- Thumbnails -->
-                                    <section class="thumbnails">
-                                        <div>
-                                           
-                                            <a href="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png" alt="" />
-                                                <h3>Zinger Burger</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/Chicken-Shawarma-Final-1.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Shawarma-Final-1.jpg" alt="" />
-                                                <h3>Chicken Shawarma</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/Best-Platter-Chicken-Shawarma-Recipe.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/Best-Platter-Chicken-Shawarma-Recipe.jpg" alt="" />
-                                                <h3>Platter Chicken Shawarma</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/sandwich.jpeg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/sandwich.jpeg" alt="" />
-                                                <h3>Sandwich</h3>
-                                            </a>
+                                <!-- Thumbnails -->
+                                <section class="thumbnails">
+                                    <div>
 
-                                        </div>
-                                        <div>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/frenchfries.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/frenchfries.jpg" alt="" />
-                                                <h3>French Fries</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/chicken-burger-recipe-500x500.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/chicken-burger-recipe-500x500.jpg" alt="" />
-                                                <h3>Chicken Burger</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/Chicken-Fajita-Pizza7.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Fajita-Pizza7.jpg" alt="" />
-                                                <h3>Chicken Fajita Pizza</h3>
-                                            </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/chicken-zinger-500x500.png" alt="" />
+                                            <h3>Zinger Burger</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/Chicken-Shawarma-Final-1.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Shawarma-Final-1.jpg" alt="" />
+                                            <h3>Chicken Shawarma</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/Best-Platter-Chicken-Shawarma-Recipe.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/Best-Platter-Chicken-Shawarma-Recipe.jpg" alt="" />
+                                            <h3>Platter Chicken Shawarma</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/sandwich.jpeg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/sandwich.jpeg" alt="" />
+                                            <h3>Sandwich</h3>
+                                        </a>
 
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/Chicken-Tikka-Wrap-.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Tikka-Wrap-.jpg" alt="" />
-                                                <h3>Chicken Tikka Wrap</h3>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/nugets.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/nugets.jpg" alt="" />
-                                                <h3>Nugets</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/full/CHICKEN_TIKKA_BURGER-1.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/CHICKEN_TIKKA_BURGER-1.jpg" alt="" />
-                                                <h3>Chicken Tikka Burger</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg" alt="" />
-                                                <h3>Crust Pizza</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/zinger-shawarma.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/zinger-shawarma.jpg" alt="" />
-                                                <h3>Zinger Shwarma</h3>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/donuts.png">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/donuts.png" alt="" />
-                                                <h3>Donuts</h3>
-                                            </a>
+                                    </div>
+                                    <div>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/frenchfries.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/frenchfries.jpg" alt="" />
+                                            <h3>French Fries</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/chicken-burger-recipe-500x500.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/chicken-burger-recipe-500x500.jpg" alt="" />
+                                            <h3>Chicken Burger</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/Chicken-Fajita-Pizza7.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Fajita-Pizza7.jpg" alt="" />
+                                            <h3>Chicken Fajita Pizza</h3>
+                                        </a>
 
-                                            <a href="~/Assets/Images/FoodItems/junkFood/classic-beef-burger.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/classic-beef-burger.jpg" alt="" />
-                                                <h3>Beef Burger</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/pan pizza.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/pan pizza.jpg" alt="" />
-                                                <h3>Pan Pizza</h3>
-                                            </a>
-                                            <a href="~/Assets/Images/FoodItems/junkFood/pumpkin-veggie-burger.jpg">
-                                                <img src="~/Assets/Images/FoodItems/junkFood/pumpkin-veggie-burger.jpg" alt="" />
-                                                <h3>Veggie Burger</h3>
-                                            </a>
-                                        </div>
-                                       
-         
-                                    </section>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/Chicken-Tikka-Wrap-.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/Chicken-Tikka-Wrap-.jpg" alt="" />
+                                            <h3>Chicken Tikka Wrap</h3>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/nugets.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/nugets.jpg" alt="" />
+                                            <h3>Nugets</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/full/CHICKEN_TIKKA_BURGER-1.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/CHICKEN_TIKKA_BURGER-1.jpg" alt="" />
+                                            <h3>Chicken Tikka Burger</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/crust pizza.jpg" alt="" />
+                                            <h3>Crust Pizza</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/zinger-shawarma.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/zinger-shawarma.jpg" alt="" />
+                                            <h3>Zinger Shwarma</h3>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/donuts.png">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/donuts.png" alt="" />
+                                            <h3>Donuts</h3>
+                                        </a>
+
+                                        <a href="~/Assets/Images/FoodItems/junkFood/classic-beef-burger.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/classic-beef-burger.jpg" alt="" />
+                                            <h3>Beef Burger</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/pan pizza.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/pan pizza.jpg" alt="" />
+                                            <h3>Pan Pizza</h3>
+                                        </a>
+                                        <a href="~/Assets/Images/FoodItems/junkFood/pumpkin-veggie-burger.jpg">
+                                            <img src="~/Assets/Images/FoodItems/junkFood/pumpkin-veggie-burger.jpg" alt="" />
+                                            <h3>Veggie Burger</h3>
+                                        </a>
+                                    </div>
+
+
+                                </section>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times mr-1"></i>
                                     Close
@@ -444,7 +827,7 @@
                                             <img src="~/Assets/Images/FoodItems/Punjabi/Tandoori-Chicken-1-3.jpg" alt="" />
                                             <h3>Tandoori Chicken</h3>
                                         </a>
-                                     
+
                                     </div>
 
 
@@ -497,7 +880,7 @@
                                             <img src="~/Assets/Images/FoodItems/Chinese/Manchurian-Recipe-blog-1-of-1.jpg" alt="" />
                                             <h3>Manchurian</h3>
                                         </a>
-                                       
+
                                         <a href="~/Assets/Images/FoodItems/Chinese/springrolls.jpg">
                                             <img src="~/Assets/Images/FoodItems/Chinese/springrolls.jpg" alt="" />
                                             <h3>Spring Rolls</h3>
@@ -565,8 +948,8 @@
                                             <img src="~/Assets/Images/FoodItems/NoodlesRice/garlic-rice-noodles.jpg" alt="" />
                                             <h3>Garlic Rice Noodles</h3>
                                         </a>
-                                      
-                                      
+
+
 
                                     </div>
                                     <div>
@@ -578,7 +961,7 @@
                                             <img src="~/Assets/Images/FoodItems/NoodlesRice/Rice-noodles-10.jpg" alt="" />
                                             <h3>Rice Noodles</h3>
                                         </a>
-                                       
+
 
                                     </div>
                                     <div>
@@ -635,7 +1018,7 @@
                                 <section class="thumbnails">
                                     <div>
 
-                                      
+
                                         <a href="~/Assets/Images/FoodItems/Soups/beercheesesoup.jpg">
                                             <img src="~/Assets/Images/FoodItems/Soups/beercheesesoup.jpg" alt="" />
                                             <h3>Beer Cheese Soup</h3>
@@ -682,7 +1065,7 @@
                                             <img src="~/Assets/Images/FoodItems/Soups/hot and sour soup.png" alt="" />
                                             <h3>Hot and Sour Soup</h3>
                                         </a>
-                                       
+
                                     </div>
                                     <div>
                                         <a href="~/Assets/Images/FoodItems/Soups/Navy-Bean-Soup.jpg">
@@ -802,7 +1185,7 @@
                                             <img src="~/Assets/Images/FoodItems/Beverages/grape-juice.jpg" alt="" />
                                             <h3>Grape Juice</h3>
                                         </a>
-                                       
+
                                         <a href="~/Assets/Images/FoodItems/Beverages/long black(americano).jpg">
                                             <img src="~/Assets/Images/FoodItems/Beverages/long black(americano).jpg" alt="" />
                                             <h3> Americano</h3>
@@ -854,7 +1237,7 @@
                                             <h3>Tea</h3>
                                         </a>
                                     </div>
-                         
+
                                 </section>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times mr-1"></i>
@@ -886,6 +1269,13 @@
     <script src="~/Scripts/jquery.poptrox.min.js"></script>
     <script src="~/Scripts/skel.min.js"></script>
     <script src="~/Scripts/main.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="~/Scripts/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/Scripts/vendor/venobox/venobox.min.js"></script>
+    <script src="~/Scripts/vendor/aos/aos.js"></script>
+
 
 </body>
 </html>
