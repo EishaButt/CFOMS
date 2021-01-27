@@ -124,9 +124,27 @@
             <td style="text-align:right"><asp:Label ID="Label9" runat="server" Text="City:"></asp:Label></td>
             <td style="text-align:left">
                 <asp:DropDownList ID="DropDownList1_city" runat="server" style="margin-left: 0px" Width="240px" >
-                <asp:ListItem>Surat</asp:ListItem>
-                <asp:ListItem>Vadodara</asp:ListItem>
-                <asp:ListItem>Ahemdabad</asp:ListItem>
+                <asp:ListItem>Lahore</asp:ListItem>
+                <asp:ListItem>Karachi</asp:ListItem>
+                <asp:ListItem>Faisalabad</asp:ListItem>
+                <asp:ListItem>Rawalpindi</asp:ListItem>
+                <asp:ListItem>Multan</asp:ListItem>
+                <asp:ListItem>Gujranwala</asp:ListItem>
+                <asp:ListItem>Hyderabad</asp:ListItem>
+                <asp:ListItem>Peshawar</asp:ListItem>
+                <asp:ListItem>Islamabad</asp:ListItem>
+                <asp:ListItem>Sukkur</asp:ListItem>
+                <asp:ListItem>Bahawalpur</asp:ListItem><asp:ListItem>Faisalabad</asp:ListItem>
+                <asp:ListItem>Quetta</asp:ListItem>
+                <asp:ListItem>Dera Ghazi Khan</asp:ListItem>
+                <asp:ListItem>Gujrat</asp:ListItem>
+                <asp:ListItem>Sheikhupura</asp:ListItem>
+                <asp:ListItem>Jhelum</asp:ListItem>
+                <asp:ListItem>Daska</asp:ListItem>
+                <asp:ListItem>Shikarpur</asp:ListItem>
+                <asp:ListItem>Umerkot</asp:ListItem>
+                <asp:ListItem>Ferozwala</asp:ListItem>
+                <asp:ListItem>Chakwal</asp:ListItem>
                 </asp:DropDownList></td>
         </tr>
         </table>
