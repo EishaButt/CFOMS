@@ -4,9 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <style>
+   <style>
         .b{
-    background-color:#00ccff;
+    background-color:#00ff21;
 	border: none;
     color: white;
     padding: 15px 32px;
@@ -26,7 +26,7 @@
 
 
 input[type="submit"].b1{
-    background-color:#00ccff;
+    background-color:#4dae3c;
     border: 1px solid black;
     color: white;
     text-align: center;
@@ -39,12 +39,20 @@ input[type="submit"].b1{
 }
 
 input[type="submit"].b1:hover{
-	background-color:white;
-	color:#00ccff;
+	background-color:#ffd800;
+	color:#f9f9f9;
 }
 
 body{
-    background-color:#222930;
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("../assets/Images/cook_02.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
 }
 
 .row{
@@ -53,7 +61,7 @@ body{
 	color:white;
 	border:transparent;
 	font-family:red-serif,Georgia;
-	text-shadow: 2px 2px red;
+	text-shadow: 2px;
 }
 
 .gridview{
@@ -93,24 +101,27 @@ body{
     cursor: pointer;
 }
 .button3 {
-	background-color: #3DFF33;
+	background-color: #4dae3c;
 	border-radius: 50%;
 	border:transparent;
-	color:#2c3338;
+	color:#4dae3c;
 	outline-style:none;
 }
 
 .button3:hover {
-	background-color:white;
-	color:#2c3338;
+	background-color:#ffd800;
+	color:#E9E9E9;
 	}
 	
 
 .button2 {
-	background-color: #3DFF33;
+	background-color: #4dae3c;
 	border-radius: 4px;
 }
-
+.button2:hover {
+	background-color:#ffd800;
+	color:#E9E9E9;
+	}
 .b4{
     background-color:#00ccff;
 	border: none;
@@ -237,15 +248,15 @@ body{
        
         
 
-        <center>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<font size="7" color="#00ccff"><b><u>PAYMENT&nbsp; DETAILS</u></b></font> 
+        <center>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<font size="7" color="#4dae3c"><b><u>PAYMENT&nbsp; DETAILS</u></b></font> 
         <br />
         <br />
         <br />
         <br />
         <div style="margin-left: 40px">
-            <h3><asp:Label ID="Label1" runat="server" Text="" ForeColor="#00ccff"></asp:Label></h3>
+            <h3><asp:Label ID="Label1" runat="server" Text="" ForeColor="#4dae3c"></asp:Label></h3>
         </div>
-        <h1><font color="#00ccff">Final Order List</font></h1>
+        <h1><font color="#4dae3c">Final Order List</font></h1>
         <asp:GridView ID="gridorder" DataSourceID="sql1" DataKeyNames="Item_no,Order_Id" 
             CssClass="gridview1" HeaderStyle-CssClass="header" RowStyle-CssClass="row" runat="server" 
             AutoGenerateColumns="False" HeaderStyle-Font-Bold="true" >
@@ -261,7 +272,7 @@ body{
         </asp:GridView>
 
         <asp:SqlDataSource ID="sql1" runat="server" 
-            ConnectionString="Data Source=DESKTOP-QEUNHHO;Initial Catalog=CFOS;Integrated Security=True"
+            ConnectionString="Data Source=NAMRARATHORE\MSSQLSERVER01;Initial Catalog=CFOS;Integrated Security=True"
             SelectCommand="SELECT im.Item_name,od.Price,od.Quantity,od.Amount,od.Order_Id,od.Item_no
                             FROM [dbo].[Order_Details] od INNER JOIN [dbo].[Item_Master] im 
                              ON od.Item_no=im.Item_no WHERE od.Order_Id=@Order_Id">
@@ -279,11 +290,11 @@ body{
             &nbsp;</p>
         <h3><b>
         <p style="margin-left: 40px" >
-           <font color="#00ccff" size="5">Total Amount:</font>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <font color="#4dae3c" size="5">Total Amount:</font>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label2" runat="server" Text="Label" ForeColor="White"></asp:Label>
         </p>
         <p style="margin-left: 40px">
-         <font color="#00ccff" size="4">PAY  BY:</font></p>
+         <font color="#4dae3c" size="4">PAY  BY:</font></p>
 </b></h3>
 
         <p style="margin-left: 120px">

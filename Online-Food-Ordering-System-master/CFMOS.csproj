@@ -114,6 +114,7 @@
     <Content Include="assets\form-search.css" />
     <Content Include="assets\form-validation.css" />
     <Content Include="assets\Images\b.jpg" />
+    <Content Include="assets\Images\cappuccino-coffee-cup.jpg" />
     <Content Include="assets\Images\cook_01.jpg" />
     <Content Include="assets\Images\cook_02.jpg" />
     <Content Include="assets\Images\cook_breakfast.png" />
@@ -121,7 +122,10 @@
     <Content Include="assets\Images\cook_dinner.png" />
     <Content Include="assets\Images\cook_lunch.png" />
     <Content Include="assets\Images\login.jpg" />
+    <Content Include="assets\Images\Mango-Shake.jpeg" />
+    <Content Include="assets\Images\orange.jpg" />
     <Content Include="assets\Images\spoon.jpg" />
+    <Content Include="assets\Images\Strawberry-Milkshake-5.jpg" />
     <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
     <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
     <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />

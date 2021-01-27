@@ -118,9 +118,6 @@
      <!-- Bootstrap Core CSS -->
     <link href="sidebar/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Custom CSS -->
-    <link href="sidebar/css/simple-sidebar.css" rel="stylesheet"/>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -139,7 +136,7 @@
                
                 <li class="sidebar-brand">
                     
-                       <font color="#3DFF33"><u><b>ADMIN FEATURES</b></u></font>
+                       <font color="#14a80c"><u><b>ADMIN FEATURES</b></u></font>
 
                 </li>
                 <li>

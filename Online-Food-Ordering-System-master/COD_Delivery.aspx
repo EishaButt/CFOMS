@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <style>
         .b{
-    background-color:#00ccff;
+    background-color:#00ff21;
 	border: none;
     color: white;
     padding: 15px 32px;
@@ -26,7 +26,7 @@
 
 
 input[type="submit"].b1{
-    background-color:#00ccff;
+    background-color:#4dae3c;
     border: 1px solid black;
     color: white;
     text-align: center;
@@ -39,12 +39,20 @@ input[type="submit"].b1{
 }
 
 input[type="submit"].b1:hover{
-	background-color:white;
-	color:#00ccff;
+	background-color:#ffd800;
+	color:#f9f9f9;
 }
 
 body{
-    background-color:#222930;
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("../assets/Images/cook_02.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
 }
 
 .row{
@@ -53,7 +61,7 @@ body{
 	color:white;
 	border:transparent;
 	font-family:red-serif,Georgia;
-	text-shadow: 2px 2px red;
+	text-shadow: 2px;
 }
 
 .gridview{
@@ -93,24 +101,27 @@ body{
     cursor: pointer;
 }
 .button3 {
-	background-color: #3DFF33;
+	background-color: #4dae3c;
 	border-radius: 50%;
 	border:transparent;
-	color:#2c3338;
+	color:#4dae3c;
 	outline-style:none;
 }
 
 .button3:hover {
-	background-color:white;
-	color:#2c3338;
+	background-color:#ffd800;
+	color:#E9E9E9;
 	}
 	
 
 .button2 {
-	background-color: #3DFF33;
+	background-color: #4dae3c;
 	border-radius: 4px;
 }
-
+.button2:hover {
+	background-color:#ffd800;
+	color:#E9E9E9;
+	}
 .b4{
     background-color:#00ccff;
 	border: none;
@@ -216,14 +227,6 @@ body{
     background-color: #3DFF33;
 }
 
-        input[type=text] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 1px;
-    background:#595959;
-}
-
     </style>
     <title> COD Delivery</title>
         
@@ -243,15 +246,15 @@ body{
       <br />
         <br />
      
-        <center>&emsp;&emsp;&emsp;&emsp;<font size="7" color="#00ccff"><b><u>CASH ON DELIVERY</u></b> </font></center>
+        <center>&emsp;&emsp;&emsp;&emsp;<font size="7" color="#4dae3c"><b><u>CASH ON DELIVERY</u></b> </font></center>
             <br />
             <br />
         <center>
-                <h3><b><asp:Label ID="Label1" runat="server" Text="" ForeColor="White" ></asp:Label></b></h3>
+                <h3><b><asp:Label ID="Label1" runat="server" Text="" ForeColor="#4dae3c" ></asp:Label></b></h3>
         <br />
        </center>
 
-        <b><font color="#00ccff">
+        <b><font color="#4dae3c">
         
         <p>    &nbsp;</p>
         <p style="margin-left: 40px">
@@ -275,28 +278,10 @@ body{
         </p>
         <p style="margin-left: 40px">
             CITY :&emsp;&emsp;&emsp;&emsp;&emsp;
-            <asp:DropDownList ID="D_city" runat="server" style="margin-left: 0px" Width="164px" Height="44px" BackColor="#595959">
-                <asp:ListItem>Lahore</asp:ListItem>
-                <asp:ListItem>Karachi</asp:ListItem>
-                <asp:ListItem>Faisalabad</asp:ListItem>
-                <asp:ListItem>Rawalpindi</asp:ListItem>
-                <asp:ListItem>Multan</asp:ListItem>
-                <asp:ListItem>Gujranwala</asp:ListItem>
-                <asp:ListItem>Hyderabad</asp:ListItem>
-                <asp:ListItem>Peshawar</asp:ListItem>
-                <asp:ListItem>Islamabad</asp:ListItem>
-                <asp:ListItem>Sukkur</asp:ListItem>
-                <asp:ListItem>Bahawalpur</asp:ListItem><asp:ListItem>Faisalabad</asp:ListItem>
-                <asp:ListItem>Quetta</asp:ListItem>
-                <asp:ListItem>Dera Ghazi Khan</asp:ListItem>
-                <asp:ListItem>Gujrat</asp:ListItem>
-                <asp:ListItem>Sheikhupura</asp:ListItem>
-                <asp:ListItem>Jhelum</asp:ListItem>
-                <asp:ListItem>Daska</asp:ListItem>
-                <asp:ListItem>Shikarpur</asp:ListItem>
-                <asp:ListItem>Umerkot</asp:ListItem>
-                <asp:ListItem>Ferozwala</asp:ListItem>
-                <asp:ListItem>Chakwal</asp:ListItem>
+            <asp:DropDownList ID="D_city" runat="server" style="margin-left: 0px" Width="164px" Height="44px" BackColor="white">
+                <asp:ListItem>Ahmedabad</asp:ListItem>
+                <asp:ListItem>Surat</asp:ListItem>
+                <asp:ListItem>Vadodara</asp:ListItem>
                 </asp:DropDownList>
        
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"  ErrorMessage="Enter the city"

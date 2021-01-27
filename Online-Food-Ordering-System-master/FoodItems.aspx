@@ -6,7 +6,7 @@
 <head runat="server">
     <style>
         .b{
-    background-color:#00ccff;
+    background-color:#fed136;
 	border: none;
     color: white;
     padding: 15px 32px;
@@ -26,7 +26,7 @@
 
 
 input[type="submit"].b1{
-    background-color:#00ccff;
+    background-color:#fed136;
     border: 1px solid black;
     color: white;
     text-align: center;
@@ -40,20 +40,28 @@ input[type="submit"].b1{
 
 input[type="submit"].b1:hover{
 	background-color:white;
-	color:#00ccff;
+	color:#fed136;
 }
 
 body{
-    background-color:#222930;
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ),
+  url("../assets/Images/cook_02.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
 }
 
 .row{
     height:30px;
     width:32%;
-	color:white;
+	color:#4dae3c;
 	border:transparent;
 	font-family:red-serif,Georgia;
-	text-shadow: 2px 2px red;
+	text-shadow: 2px;
 }
 
 .gridview{
@@ -93,7 +101,7 @@ body{
     cursor: pointer;
 }
 .button3 {
-	background-color: #3DFF33;
+	background-color: #4dae3c;
 	border-radius: 50%;
 	border:transparent;
 	color:#2c3338;
@@ -175,7 +183,7 @@ body{
 }
 
 .dropbtn {
-    background-color:#00ccff;
+    background-color:#4dae3c;
     text-align: center;
     text-decoration: none;
 	display: inline-block;
@@ -222,8 +230,8 @@ body{
 </head>
 <body>
     <center>
-        <h1><asp:Label Style="color:#00ccff;" ID="status" runat="server" Visible="false" /></h1>
-        <h1><asp:Label Style="color:#00ccff;" ID="status1" runat="server" Visible="false" /></h1>
+        <h1><asp:Label Style="color:#fed136;" ID="status" runat="server" Visible="false" /></h1>
+        <h1><asp:Label Style="color:#fed136;" ID="status1" runat="server" Visible="false" /></h1>
     </center>           
 
     <div id="home" runat="server" >
@@ -249,9 +257,9 @@ body{
          <h2><asp:Label Style="float:right; color:white; margin-right:30px;" ID="Label1" runat="server" Font-Bold="true" Visible="false" />
              <asp:Label ID="Label2" Style="float:right; color:white" Text="Hello&nbsp" runat="server" Font-Bold="true" Visible="false" />
          </h2>      
-            <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="350px"  Height="150px"/>
+             <h1 style="margin-left:20px;"><span style="color:#fed136;">C</span><span style="color:white;">F</span><span style="color:#4dae3c;">M</span><span style="color:white;">O</span><span style="color:#fed136;">S</span></h1>
        <center>&emsp;&emsp;
-        <h1><asp:Label Style="color:#00ccff; margin-left:100px; font-variant-caps:small-caps;" ID="sizlr" runat="server" Visible="false" /></h1></center>
+        <h1><asp:Label Style="color:#4dae3c; margin-left:100px; font-variant-caps:small-caps;" ID="sizlr" runat="server" Visible="false" /></h1></center>
 
        <br /><br />
 
@@ -267,15 +275,15 @@ body{
         <div class="w3-content w3-section" style="max-width:550px" id="pic" runat="server" >
             <br />
             <center>
-        <img class="mySlides w3-animate-fading" src="PIC\noodles.jpg"  height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\man.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\szh_f.JPG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\rice.PNG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\chop.PNG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\schewan-vegetables.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\choco.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\manchurian.jpg" height="450px" width="550px" />
-         <img class="mySlides w3-animate-fading" src="PIC\c_v.jpg" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="assets\Images\cappuccino-coffee-cup.jpg"  height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\man.jpg" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\szh_f.JPG" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\rice.PNG" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="assets\Images\Strawberry-Milkshake-5.jpg" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\schewan-vegetables.jpg" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\choco.jpg" height="350px" width="650px" />
+        <img class="mySlides w3-animate-fading" src="PIC\manchurian.jpg" height="350px" width="650px" />
+         <img class="mySlides w3-animate-fading" src="PIC\c_v.jpg" height="350px" width="650px" />
                 </center>
         </div>
 

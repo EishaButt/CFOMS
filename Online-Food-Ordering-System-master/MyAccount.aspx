@@ -277,7 +277,7 @@ textarea {
 
             <asp:Sqldatasource ID="sql1" runat="server" 
             ConnectionString="Data Source=NAMRARATHORE\MSSQLSERVER01;AttachDbFilename=
-                CFOS;Integrated Security=True"
+                E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\App_Data\ofos.mdf;Integrated Security=True"
             SelectCommand="select Username, Password, Email, Contact_no, House_no, Street, City from [dbo].[Customers]
                  where Username=@Username"
             UpdateCommand="update [dbo].[Customers] set Password=@Password, Email=@Email, Contact_no=@Contact_no,

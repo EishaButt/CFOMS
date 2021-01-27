@@ -230,7 +230,7 @@
         </asp:GridView>  
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Aayushi.Mehta\Source\Repos\OnlineFoodOrderingSystem_C4\OFOS\OFOS\App_Data\ofos.mdf;Integrated Security=True" 
+            ConnectionString="Data Source=NAMRARATHORE\MSSQLSERVER01;AttachDbFilename= E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\App_Data\ofos.mdf;Integrated Security=True" 
             SelectCommand="SELECT * FROM [Item_Master]" 
             UpdateCommand="UPDATE [Item_Master] SET Item_name=@Item_name, Price=@Price, 
             Description=@Description, Image_url=@Image_url, Type=@Type WHERE Item_no=@Item_no" 

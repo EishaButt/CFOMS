@@ -239,7 +239,7 @@
     </center>
   
               <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="Data Source=DESKTOP-QEUNHHO;Initial Catalog=CFOS;Integrated Security=True" 
+            ConnectionString="Data Source=NAMRARATHORE\MSSQLSERVER01;Initial Catalog=CFOS;Integrated Security=True" 
             SelectCommand="SELECT [Cmt_no], [Cust_Id], [Username], [Comment], [Credits] FROM [Feedback]" 
             UpdateCommand="UPDATE [Feedback] SET Credits=@Credits WHERE Cmt_no=@Cmt_no" >
 
