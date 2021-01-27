@@ -136,7 +136,7 @@
         margin-right: 0;
     }
 }
-    </style>
+ </style>
    
     <title>Admin Tasks</title>
 

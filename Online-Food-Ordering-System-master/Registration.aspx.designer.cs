@@ -7,20 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OFOS {
-    
-    
-    public partial class Registration {
-        
-        /// <summary>
-        /// i control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image i;
-        
+namespace OFOS
+{
+
+
+    public partial class Registration
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +22,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// LinkButton1 control.
         /// </summary>
@@ -38,7 +31,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
-        
+
         /// <summary>
         /// lblStatus control.
         /// </summary>
@@ -47,7 +40,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStatus;
-        
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -56,7 +49,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// tb_username control.
         /// </summary>
@@ -65,7 +58,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_username;
-        
+
         /// <summary>
         /// rfv_username control.
         /// </summary>
@@ -74,7 +67,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_username;
-        
+
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -83,7 +76,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// tb_name control.
         /// </summary>
@@ -92,7 +85,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_name;
-        
+
         /// <summary>
         /// Label3 control.
         /// </summary>
@@ -101,7 +94,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// tb_pwd control.
         /// </summary>
@@ -110,7 +103,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_pwd;
-        
+
         /// <summary>
         /// rfv_pwd control.
         /// </summary>
@@ -119,7 +112,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_pwd;
-        
+
         /// <summary>
         /// Label4 control.
         /// </summary>
@@ -128,7 +121,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-        
+
         /// <summary>
         /// tb_repwd control.
         /// </summary>
@@ -137,7 +130,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_repwd;
-        
+
         /// <summary>
         /// cv_repwd control.
         /// </summary>
@@ -146,7 +139,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator cv_repwd;
-        
+
         /// <summary>
         /// Label5 control.
         /// </summary>
@@ -155,7 +148,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// tb_email control.
         /// </summary>
@@ -164,7 +157,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_email;
-        
+
         /// <summary>
         /// rev_email control.
         /// </summary>
@@ -173,7 +166,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_email;
-        
+
         /// <summary>
         /// Label6 control.
         /// </summary>
@@ -182,7 +175,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label6;
-        
+
         /// <summary>
         /// tb_contact control.
         /// </summary>
@@ -191,7 +184,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_contact;
-        
+
         /// <summary>
         /// rev_contact control.
         /// </summary>
@@ -200,7 +193,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_contact;
-        
+
         /// <summary>
         /// Label7 control.
         /// </summary>
@@ -209,7 +202,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label7;
-        
+
         /// <summary>
         /// tb_house control.
         /// </summary>
@@ -218,7 +211,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_house;
-        
+
         /// <summary>
         /// Label8 control.
         /// </summary>
@@ -227,7 +220,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
-        
+
         /// <summary>
         /// tb_street control.
         /// </summary>
@@ -236,7 +229,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_street;
-        
+
         /// <summary>
         /// Label9 control.
         /// </summary>
@@ -245,7 +238,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label9;
-        
+
         /// <summary>
         /// DropDownList1_city control.
         /// </summary>
@@ -254,7 +247,7 @@ namespace OFOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1_city;
-        
+
         /// <summary>
         /// Button1_register control.
         /// </summary>

@@ -135,7 +135,7 @@
         margin-right: 0;
     }
 }
-    </style>
+</style>
     <title>Manage COD</title>
     <!-- Bootstrap Core CSS -->
     <link href="sidebar/css/bootstrap.min.css" rel="stylesheet">

@@ -95,12 +95,12 @@
         <p style="margin-left: 40px; width: 900px;">
             <b>TYPE :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="dropdown_type" runat="server" Width="500px" CssClass=" form-control-static">
-                <asp:ListItem>SOUPS</asp:ListItem>
-                <asp:ListItem>STARTERS</asp:ListItem>
+                <asp:ListItem>SOUP</asp:ListItem>
+                <asp:ListItem>STARTER</asp:ListItem>
                 <asp:ListItem>RICE</asp:ListItem>
                 <asp:ListItem>NOODLES</asp:ListItem>
                 <asp:ListItem>MAIN COURSE</asp:ListItem>
-                <asp:ListItem>DESSERTS</asp:ListItem>
+                <asp:ListItem>DESSERT</asp:ListItem>
             </asp:DropDownList>
 
         </p>
