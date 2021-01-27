@@ -54,7 +54,7 @@ namespace OFOS
             
 
 
-            Label2.Text = " ₹ "+Session["total"].ToString();
+            Label2.Text = " PKR "+Session["total"].ToString();
             if (!IsPostBack)
             {
                 Session["pay"] = null;

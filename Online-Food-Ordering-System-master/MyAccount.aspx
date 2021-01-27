@@ -242,9 +242,27 @@ textarea {
                         </ItemTemplate>                        
                         <EditItemTemplate>
                             <asp:DropDownList ID="ddlcity" runat="server">
-                                <asp:ListItem>Surat</asp:ListItem>
-                                <asp:ListItem>Vadodara</asp:ListItem>
-                                <asp:ListItem>Ahemdabad</asp:ListItem>
+                                 <asp:ListItem>Lahore</asp:ListItem>
+                                 <asp:ListItem>Karachi</asp:ListItem>
+                                 <asp:ListItem>Faisalabad</asp:ListItem>
+                                 <asp:ListItem>Rawalpindi</asp:ListItem>
+                                 <asp:ListItem>Multan</asp:ListItem>
+                                 <asp:ListItem>Gujranwala</asp:ListItem>
+                                 <asp:ListItem>Hyderabad</asp:ListItem>
+                                 <asp:ListItem>Peshawar</asp:ListItem>
+                                 <asp:ListItem>Islamabad</asp:ListItem>
+                                 <asp:ListItem>Sukkur</asp:ListItem>
+                                 <asp:ListItem>Bahawalpur</asp:ListItem><asp:ListItem>Faisalabad</asp:ListItem>
+                                 <asp:ListItem>Quetta</asp:ListItem>
+                                 <asp:ListItem>Dera Ghazi Khan</asp:ListItem>
+                                 <asp:ListItem>Gujrat</asp:ListItem>
+                                 <asp:ListItem>Sheikhupura</asp:ListItem>
+                                 <asp:ListItem>Jhelum</asp:ListItem>
+                                 <asp:ListItem>Daska</asp:ListItem>
+                                 <asp:ListItem>Shikarpur</asp:ListItem>
+                                 <asp:ListItem>Umerkot</asp:ListItem>
+                                 <asp:ListItem>Ferozwala</asp:ListItem>
+                                 <asp:ListItem>Chakwal</asp:ListItem>
                             </asp:DropDownList> 
                         </EditItemTemplate>
                     </asp:TemplateField>
