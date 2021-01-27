@@ -113,6 +113,7 @@
         margin-right: 0;
     }
 }
+     </style>
     <title>Add Items</title>
      <!-- Bootstrap Core CSS -->
     <link href="sidebar/css/bootstrap.min.css" rel="stylesheet"/>
