@@ -64,7 +64,7 @@ namespace OFOS
                     {
                         int sum = (int)cmd.ExecuteScalar();
 
-                        Label1.Text = "Total Amount :  ₹ " + sum;
+                        Label1.Text = "Total Amount :  PKR " + sum;
                         Session["total"] = sum;
                     }
                     else
