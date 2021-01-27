@@ -17,7 +17,7 @@ namespace OFOS
         protected void Page_Load(object sender, EventArgs e)
         {
               System.DateTime t1 = System.DateTime.Parse("2016/12/12 00:00:00.000");
-              System.DateTime t2 = System.DateTime.Parse("2016/12/12 23:00:00.000");
+              System.DateTime t2 = System.DateTime.Parse("2016/12/12 23:59:59.000");
               System.DateTime t3 = System.DateTime.Now;
               if (t3.TimeOfDay < t1.TimeOfDay || t3.TimeOfDay > t2.TimeOfDay)
               {
