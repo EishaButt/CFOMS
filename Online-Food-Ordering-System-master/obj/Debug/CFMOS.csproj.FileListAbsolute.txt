@@ -25,3 +25,30 @@ E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-
 E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\obj\Debug\CFMOS.csproj.CopyComplete
 E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\obj\Debug\OFOS.dll
 E:\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\Online-Food-Ordering-System-master\obj\Debug\OFOS.pdb
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\ApplicationInsights.config
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\csc.exe
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\System.Collections.Immutable.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\System.Reflection.Metadata.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\vbc.exe
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\VBCSCompiler.exe
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\roslyn\VBCSCompiler.exe.config
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\OFOS.dll.config
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\OFOS.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\OFOS.pdb
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.AI.DependencyCollector.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.AI.Web.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.AI.WindowsServer.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.ApplicationInsights.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\obj\Debug\CFMOS.csprojAssemblyReference.cache
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\obj\Debug\CFMOS.csproj.CoreCompileInputs.cache
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\obj\Debug\CFMOS.csproj.CopyComplete
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\obj\Debug\OFOS.dll
+F:\eisha\sem 5\SE\CFOMS\Online-Food-Ordering-System-master\obj\Debug\OFOS.pdb
