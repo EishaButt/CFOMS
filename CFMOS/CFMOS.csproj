@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6750660-8F08-49D7-9348-693F2E8642DA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OFOS</RootNamespace>
+    <AssemblyName>OFOS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add_items.aspx" />
+    <Content Include="AdminSearch.aspx" />
+    <Content Include="Admin_Login.aspx" />
+    <Content Include="Admin_Tasks.aspx" />
+    <Content Include="alogin\css\style.css" />
+    <Content Include="alogin\css\style1.css" />
+    <Content Include="alogin\index.html" />
+    <Content Include="assets\demo.css" />
+    <Content Include="assets\form-basic.css" />
+    <Content Include="assets\form-labels-on-top.css" />
+    <Content Include="assets\form-login.css" />
+    <Content Include="assets\form-mini.css" />
+    <Content Include="assets\form-register.css" />
+    <Content Include="assets\form-search.css" />
+    <Content Include="assets\form-validation.css" />
+    <Content Include="assets\Images\b.jpg" />
+    <Content Include="assets\Images\cappuccino-coffee-cup.jpg" />
+    <Content Include="assets\Images\cook_01.jpg" />
+    <Content Include="assets\Images\cook_02.jpg" />
+    <Content Include="assets\Images\cook_breakfast.png" />
+    <Content Include="assets\Images\cook_dessert.png" />
+    <Content Include="assets\Images\cook_dinner.png" />
+    <Content Include="assets\Images\cook_lunch.png" />
+    <Content Include="assets\Images\FoodItems\Beverages\apple.jpeg" />
+    <Content Include="assets\Images\FoodItems\Beverages\bananashake.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\caffe-latte-edwardtanujayaa-1567151330.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\cappuccino-coffee-cup.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\carrot-juice-1296x728-header.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\chocolateshake.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\Classic-Homemade-Lemonade-IG.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\coca-cola.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\espreso.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\grape-juice.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\juice-box-packaging-500x500.png" />
+    <Content Include="assets\Images\FoodItems\Beverages\long black%28americano%29.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\main.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\Mango-Juice-2.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\Mango-Shake.jpeg" />
+    <Content Include="assets\Images\FoodItems\Beverages\mocha-1567151479.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\orange.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\pineapple-drink-500x500.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\promoright_1.png" />
+    <Content Include="assets\Images\FoodItems\Beverages\strawberry-juice-recipe.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\Strawberry-Milkshake-5.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\tandurichai.jpg" />
+    <Content Include="assets\Images\FoodItems\Beverages\tea.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\chickenandvegespeghetie.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\chilli-chicken-recipe-500x500.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\Chowmein.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\fried-rice-food.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\main.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\Manchurian-Recipe-blog-1-of-1.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\ricebowl.jpg" />
+    <Content Include="assets\Images\FoodItems\Chinese\springrolls.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\Best-Platter-Chicken-Shawarma-Recipe.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\chicken-burger-recipe-500x500.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\Chicken-Fajita-Pizza7.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\Chicken-Shawarma-Final-1.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\Chicken-Tikka-Wrap-.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\chicken-zinger-500x500.png" />
+    <Content Include="assets\Images\FoodItems\junkFood\CHICKEN_TIKKA_BURGER-1.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\classic-beef-burger.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\crust pizza.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\donuts.png" />
+    <Content Include="assets\Images\FoodItems\junkFood\frenchfries.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\Best-Platter-Chicken-Shawarma-Recipe.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\chicken-burger-recipe-500x500.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\Chicken-Fajita-Pizza7.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\Chicken-Shawarma-Final-1.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\Chicken-Tikka-Wrap-.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\chicken-zinger-500x500.png" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\CHICKEN_TIKKA_BURGER-1.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\classic-beef-burger.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\crust pizza.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\donuts.png" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\frenchfries.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\nugets.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\pan pizza.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\pumpkin-veggie-burger.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\sandwich.jpeg" />
+    <Content Include="assets\Images\FoodItems\junkFood\full\zinger-shawarma.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\main.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\nugets.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\pan pizza.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\pumpkin-veggie-burger.jpg" />
+    <Content Include="assets\Images\FoodItems\junkFood\sandwich.jpeg" />
+    <Content Include="assets\Images\FoodItems\junkFood\zinger-shawarma.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\cup-noodle-fried-rice.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\cup-noodle-fried-rice1.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\garlic-rice-noodles.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\garlicRiceNoodles.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\main.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\Noodle-Rice-Pilaf.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\rice-and-vermicillie-noodles.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\Rice-noodles-10.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\riceNoodlesWith-brocliiand-bellpepper.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\Singapore-Rice-Noodles.jpg" />
+    <Content Include="assets\Images\FoodItems\NoodlesRice\Stir-Fry-Recipe-with-Chicken-and-Rice-Noodles.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\Aloo-Paratha-620.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\biryani.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\chicken-butter.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\chickenkrahi.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\chole-bhature.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\Kadhai.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\kunnaGosht.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\main.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\Murgh-cholay.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\pakoda kadhai.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\paneer-tikka.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\paye.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\prantha.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\pulao.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\saag and makki ki roti.jpg" />
+    <Content Include="assets\Images\FoodItems\Punjabi\Tandoori-Chicken-1-3.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\beefandbarley.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\beercheesesoup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\Chicken-Tortilla-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\chickenNoodleSoup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\chickenshaslick.png" />
+    <Content Include="assets\Images\FoodItems\Soups\chickensoup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\ciopinno.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\Creamy-Butternut-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\Egg-Drop-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\englandclamchowder.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\Homemade-Chicken-and-Rice-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\hot and sour soup.png" />
+    <Content Include="assets\Images\FoodItems\Soups\italianwedding.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\main.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\minestrone.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\Navy-Bean-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\noodlesoup.png" />
+    <Content Include="assets\Images\FoodItems\Soups\Potluck-Chicken-Vegetable-Soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\salmon-noodle-soup.jpg" />
+    <Content Include="assets\Images\FoodItems\Soups\tomato.jpg" />
+    <Content Include="assets\Images\login.jpg" />
+    <Content Include="assets\Images\Mango-Shake.jpeg" />
+    <Content Include="assets\Images\orange.jpg" />
+    <Content Include="assets\Images\spoon.jpg" />
+    <Content Include="assets\Images\Strawberry-Milkshake-5.jpg" />
+    <Content Include="assets\Images\team\Eisha.jpg" />
+    <Content Include="assets\Images\team\Khansa.jpg" />
+    <Content Include="assets\Images\team\muskan.png" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\OFOS.dll" />
+    <Content Include="bin\OFOS.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="COD_Delivery.aspx" />
+    <Content Include="error.png" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="Final.aspx" />
+    <Content Include="FoodItems.aspx" />
+    <Content Include="IMAGES\DESSERT\choco_lava_roll.jpeg" />
+    <Content Include="IMAGES\DESSERT\choco_lava_roll1.jpeg" />
+    <Content Include="IMAGES\DESSERT\walnut_brownie.jpeg" />
+    <Content Include="IMAGES\MAIN COURSE\cottage chilli.jpg" />
+    <Content Include="IMAGES\MAIN COURSE\exotic_pepper.jpeg" />
+    <Content Include="IMAGES\MAIN COURSE\thai curry.jpg" />
+    <Content Include="IMAGES\MAIN COURSE\tofu mix veg.jpg" />
+    <Content Include="IMAGES\NOODLES\amer_chop.jpg" />
+    <Content Include="IMAGES\NOODLES\chilli_g_noodles.jpg" />
+    <Content Include="IMAGES\NOODLES\hakka noodles.jpg" />
+    <Content Include="IMAGES\NOODLES\schz_noodles.jpg" />
+    <Content Include="IMAGES\NOODLES\sing_noodles.jpg" />
+    <Content Include="IMAGES\RICE\fried_rice.jpg" />
+    <Content Include="IMAGES\RICE\peking_rice.jpg" />
+    <Content Include="IMAGES\RICE\schezwan_rice.jpg" />
+    <Content Include="IMAGES\RICE\singapore rice.jpg" />
+    <Content Include="IMAGES\RICE\singapuri_rice.jpg" />
+    <Content Include="IMAGES\RICE\singapuri_rices.jpg" />
+    <Content Include="IMAGES\SOUPS\hot_n_sour3.jpeg" />
+    <Content Include="IMAGES\STARTERS\crunchy_veg.jpg" />
+    <Content Include="IMAGES\STARTERS\five spice veg.jpg" />
+    <Content Include="IMAGES\STARTERS\five_spice_veg.jpg" />
+    <Content Include="IMAGES\STARTERS\manchurian.jpeg" />
+    <Content Include="IMAGES\MAIN COURSE\manchurian_gravy.jpeg" />
+    <Content Include="IMAGES\SOUPS\hot_n_sour.jpeg" />
+    <Content Include="IMAGES\SOUPS\lemon_coriander.jpeg" />
+    <Content Include="IMAGES\SOUPS\manchow.jpeg" />
+    <Content Include="IMAGES\SOUPS\sweet_corn.jpeg" />
+    <Content Include="IMAGES\STARTERS\mushroom_chilli.jpg" />
+    <Content Include="IMAGES\STARTERS\shz_fingers.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Manage_COD.aspx" />
+    <Content Include="Modify.aspx" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="MyOrder.aspx" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="obj\Debug\CFMOS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\OFOS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\OFOS.dll" />
+    <Content Include="obj\Debug\OFOS.pdb" />
+    <Content Include="OnlineTrans.aspx" />
+    <Content Include="alogin\config.rb" />
+    <Content Include="alogin\scss\style.scss" />
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\OFOS.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Debug\CFMOS.csproj.CopyComplete" />
+    <Content Include="obj\Debug\CFMOS.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\CFMOS.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\OFOS.csproj.CopyComplete" />
+    <Content Include="obj\Debug\OFOS.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\OFOS.csprojAssemblyReference.cache" />
+    <Content Include="IMAGES\DESSERT\Thumbs.db" />
+    <None Include="packages.config" />
+    <Content Include="sidebar\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="sidebar\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="sidebar\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="sidebar\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="sidebar\LICENSE" />
+    <Content Include="sidebar\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ofos.mdf" />
+    <Content Include="App_Data\ofos_log.ldf">
+      <DependentUpon>ofos.mdf</DependentUpon>
+    </Content>
+    <Content Include="PIC\choco.jpg" />
+    <Content Include="PIC\chop.PNG" />
+    <Content Include="PIC\c_v.jpg" />
+    <Content Include="PIC\logo.png" />
+    <Content Include="PIC\logo1.png" />
+    <Content Include="PIC\man.jpg" />
+    <Content Include="PIC\manchurian.jpg" />
+    <Content Include="PIC\noodles.jpg" />
+    <Content Include="PIC\rice.PNG" />
+    <Content Include="PIC\schewan-vegetables.jpg" />
+    <Content Include="PIC\szh_f.JPG" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Review_fb.aspx" />
+    <Content Include="scripts\ai.0.22.19-build00125.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="sidebar\css\bootstrap.css" />
+    <Content Include="sidebar\css\bootstrap.min.css" />
+    <Content Include="sidebar\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="sidebar\index.html" />
+    <Content Include="sidebar\js\bootstrap.js" />
+    <Content Include="sidebar\js\bootstrap.min.js" />
+    <Content Include="sidebar\js\jquery.js" />
+    <Content Include="slidertest.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Update_Menu.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Payment.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_items.aspx.cs">
+      <DependentUpon>Add_items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_items.aspx.designer.cs">
+      <DependentUpon>Add_items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSearch.aspx.cs">
+      <DependentUpon>AdminSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSearch.aspx.designer.cs">
+      <DependentUpon>AdminSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Tasks.aspx.cs">
+      <DependentUpon>Admin_Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Tasks.aspx.designer.cs">
+      <DependentUpon>Admin_Tasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COD_Delivery.aspx.cs">
+      <DependentUpon>COD_Delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COD_Delivery.aspx.designer.cs">
+      <DependentUpon>COD_Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Final.aspx.cs">
+      <DependentUpon>Final.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Final.aspx.designer.cs">
+      <DependentUpon>Final.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItems.aspx.cs">
+      <DependentUpon>FoodItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FoodItems.aspx.designer.cs">
+      <DependentUpon>FoodItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_COD.aspx.cs">
+      <DependentUpon>Manage_COD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_COD.aspx.designer.cs">
+      <DependentUpon>Manage_COD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrder.aspx.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyOrder.aspx.designer.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineTrans.aspx.cs">
+      <DependentUpon>OnlineTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineTrans.aspx.designer.cs">
+      <DependentUpon>OnlineTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Review_fb.aspx.cs">
+      <DependentUpon>Review_fb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Review_fb.aspx.designer.cs">
+      <DependentUpon>Review_fb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Menu.aspx.cs">
+      <DependentUpon>Update_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update_Menu.aspx.designer.cs">
+      <DependentUpon>Update_Menu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52876</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52876/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target> -->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
