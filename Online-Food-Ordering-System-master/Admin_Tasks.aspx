@@ -190,7 +190,7 @@
          <form id="form1" runat="server">
              
         <p style="margin-left:950px">
-        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LogOut</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass=" btn-link">LogOut</asp:LinkButton>
              
         </p>
         <br />

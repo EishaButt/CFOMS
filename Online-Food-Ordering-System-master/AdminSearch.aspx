@@ -197,7 +197,7 @@
          <form id="form1" runat="server">
              
         <p style="margin-left:950px">
-        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LogOut</asp:LinkButton>  
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass=" btn-link">LogOut</asp:LinkButton>  
         </p>
              
             <div id="calendar" runat="server">
@@ -207,14 +207,33 @@
                 <br />
                 <asp:Label ID="lbl_city" runat="server" Text="CITY:" Font-Bold="true" Font-Size="Medium" Font-Names="Georgia"/>
                 <asp:DropDownList ID="dropdown_city" runat="server">
-                <asp:ListItem>Surat</asp:ListItem>
-                <asp:ListItem>Vadodara</asp:ListItem>
-                <asp:ListItem>Ahemdabad</asp:ListItem>
+               <asp:ListItem>Lahore</asp:ListItem>
+                <asp:ListItem>Karachi</asp:ListItem>
+                <asp:ListItem>Faisalabad</asp:ListItem>
+                <asp:ListItem>Rawalpindi</asp:ListItem>
+                <asp:ListItem>Multan</asp:ListItem>
+                <asp:ListItem>Gujranwala</asp:ListItem>
+                <asp:ListItem>Hyderabad</asp:ListItem>
+                <asp:ListItem>Peshawar</asp:ListItem>
+                <asp:ListItem>Islamabad</asp:ListItem>
+                <asp:ListItem>Sukkur</asp:ListItem>
+                <asp:ListItem>Bahawalpur</asp:ListItem><asp:ListItem>Faisalabad</asp:ListItem>
+                <asp:ListItem>Quetta</asp:ListItem>
+                <asp:ListItem>Dera Ghazi Khan</asp:ListItem>
+                <asp:ListItem>Gujrat</asp:ListItem>
+                <asp:ListItem>Sheikhupura</asp:ListItem>
+                <asp:ListItem>Jhelum</asp:ListItem>
+                <asp:ListItem>Daska</asp:ListItem>
+                <asp:ListItem>Shikarpur</asp:ListItem>
+                <asp:ListItem>Umerkot</asp:ListItem>
+                <asp:ListItem>Ferozwala</asp:ListItem>
+                <asp:ListItem>Chakwal</asp:ListItem>
+                
                 </asp:DropDownList>
                 &emsp;&emsp;&emsp;&emsp;&emsp;
                 <asp:Label ID="lbl_user" runat="server" Text="USER:" Font-Bold="true" Font-Size="Medium" Font-Names="Georgia"/>
                 <asp:RadioButton ID="rdBtn_regi" runat="server" GroupName="grp" Text="Registered User" Font-Size="Small" Font-Names="Georgia"></asp:RadioButton>
-                <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                 <asp:RadioButton ID="rdBtn_gst" runat="server" GroupName="grp" Text="Guest" Font-Size="Small" Font-Names="Georgia"></asp:RadioButton>
                 <br />
 
@@ -224,10 +243,10 @@
                 <br /><br />
                 <asp:Calendar ID="clndr" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" TitleFormat="Month" Width="400px" >
                     <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" ForeColor="#333333" Height="10pt" />
-                    <DayStyle Width="14%" />
+                    <DayStyle Width="14%" BackColor="White" ForeColor="Black"/>
                     <NextPrevStyle Font-Size="8pt" ForeColor="White" />
                     <OtherMonthDayStyle ForeColor="#999999" />
-                    <SelectedDayStyle BackColor="#CC3333" ForeColor="White" />
+                    <SelectedDayStyle BackColor="#CC3333" ForeColor="White"   />
                     <SelectorStyle BackColor="#CCCCCC" Font-Bold="True" Font-Names="Verdana" Font-Size="8pt" ForeColor="#333333" Width="1%" />
                     <TitleStyle BackColor="Black" Font-Bold="True" Font-Size="13pt" ForeColor="White" Height="14pt" />
                     <TodayDayStyle BackColor="#CCCC99" />
